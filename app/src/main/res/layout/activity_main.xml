@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NavigationView是安卓5.0后推出的，使用的时候和TabLayout(5.0后推出的)是一样的，要导入design依赖包-->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drwaerLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="qianfeng.a6_3drawerlayoutand_negavitionview.MainActivity">
+
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolBar"
+          android:layout_width="match_parent"
+          android:background="@color/colorPrimary"
+          android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+
+      <TextView
+          android:text="主布局"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content" />
+  </LinearLayout>
+
+    <!--  android:layout_width="wrap_content" 是屏幕的4/5 的宽度 -->
+    <!-- app:fitsSystemWindows="true" 适应状态栏还有下面的软系统栏（即屏幕下方的软按键的后退键）-->
+    <!-- 由于是在DrawerLayout布局里面，还是要指定 左边的侧拉菜单是什么 layout_gravity="left"-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/design_navigation_view"
+        android:layout_width="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/header_layout"
+        app:menu="@menu/menu"
+        android:layout_height="match_parent">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

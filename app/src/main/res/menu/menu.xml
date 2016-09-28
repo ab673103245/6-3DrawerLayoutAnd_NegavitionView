@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/send"
+        android:icon="@drawable/a5w"
+        android:title="发送"></item>
+    <item
+        android:id="@+id/moments"
+        android:icon="@drawable/a8k"
+        android:title="朋友圈"></item>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ads"
+        android:title="查找"></item>
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/adv"
+        android:title="红包"></item>
+</menu>
